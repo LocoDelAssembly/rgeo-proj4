@@ -1,8 +1,6 @@
-os:
-  - os: linux
-    dist: bionic
-  - os: linux
-    dist: focal
+os: linux
+  - dist: bionic
+  - dist: focal
 addons:
   apt:
     packages:
