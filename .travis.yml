@@ -1,6 +1,8 @@
 os:
-  - bionic
-  - focal
+  - os: linux
+    dist: bionic
+  - os: linux
+    dist: focal
 addons:
   apt:
     packages:
@@ -12,3 +14,8 @@ rvm:
   - 2.5
   - 2.4
   - 2.3
+env:
+  - PROJ_DISTRO=bionic
+  - PROJ_DISTRO=focal
+before_install:
+  - .travis/${PROJ_DISTRO}-setup.sh
