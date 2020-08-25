@@ -1,4 +1,4 @@
-dist:
+os:
   - bionic
   - focal
 addons:
